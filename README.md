@@ -1,5 +1,11 @@
 # CVE-2024-44285: IOSurface UaF
 
+I'm just made [an application](https://github.com/34306/IOSurface_poc18/releases/download/1.0/iosurface.ipa) that will panic your device on iOS 18.0/18.0.1
+
+![panic-full](images/IMG_0023.PNG)
+
+# Original Author Explanation
+
 This bug was introduced in iOS 18 and it is relatively shallow as it occurs in the second function after the base `s_method` call.  
 The vulnerable function lies in `s_set_corevideo_bridged_keys`, which is method #54 on iOS and #57 on macOS.  
 
